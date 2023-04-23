@@ -46,5 +46,11 @@ def view_input():
 multiple_write()
 view_input()
 
+# Sample lines to put:
+# My life is all but simple
+# Normal days, normal events
+# But deep within my 'ole heart
+# is a longing, unrelenting.
+
 # HONTIVEROS JEROME ANDREI O.
 # BSCPE 1-5
