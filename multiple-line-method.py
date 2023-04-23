@@ -30,6 +30,16 @@ def multiple_write():
                     continue
 def view_input():
     with open("mylife.txt", "r") as view_file:
-        
+        view_mylife=str(input("Would you like to view all of your input? (y or n):\n"))
+        if view_mylife=='y':
+            for line in view_file:
+                print(line.strip().rjust(25)+'\n')
+        elif view_mylife=='n':
+            print("Thank You.")
+            exit()
+        else:
+            print("Invalid")
+            print("_______________________________________________________________________________________________________________________")
 # Execute the code
 multiple_write()
+view_input()
