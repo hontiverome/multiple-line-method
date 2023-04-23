@@ -23,11 +23,13 @@ def multiple_write():
                     break
                 elif input_question=='n':
                     print("\nThank you for using the method.")
-                    exit()
+                    break
                 else: 
                     print("Invalid")
                     print("___________________________________________________________________________________________________________________________")
                     continue
+            if input_question=='n':
+                break
 def view_input():
     with open("mylife.txt", "r") as view_file:
         view_mylife=str(input("Would you like to view all of your input? (y or n):\n"))
@@ -43,3 +45,6 @@ def view_input():
 # Execute the code
 multiple_write()
 view_input()
+
+# HONTIVEROS JEROME ANDREI O.
+# BSCPE 1-5
