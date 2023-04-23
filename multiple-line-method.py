@@ -15,14 +15,15 @@ with open("mylife.txt", "w") as input_mylife:
         input_line=str(input("Enter your line: "))
         input_mylife.write(str(input_line)+"\n")
         while True:
-            input_question=str(input("Would you like to add more lines? (y or n)\n"))
+            input_question=str(input("Would you like to add more lines? (y or n only)\n"))
             if input_question=='y':
                 break
             elif input_question=='n':
                 print("Thank you for using the method.")
                 exit()
             else: 
-                print("invalid")
+                print("Invalid")
+                print("___________________________________________________________________________________________________________________________")
                 continue
 # Write into the output file 'mylife.txt'
 # Iterate input texts
