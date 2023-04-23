@@ -11,6 +11,7 @@
 # Define the method/function
 with open("mylife.txt", "w") as input_mylife:
     while True:
+        print("____________________________________________________________________________________________________________________________________")
         input_line=str(input("Enter your line: "))
         input_mylife.write(str(input_line)+"\n")
         while True:
