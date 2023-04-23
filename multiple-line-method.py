@@ -13,7 +13,9 @@ with open("mylife.txt", "w") as input_mylife:
     while True:
         print("____________________________________________________________________________________________________________________________________")
         input_line=str(input("Enter your line: "))
+        # Write input to 'mylife.txt'
         input_mylife.write(str(input_line)+"\n")
+        # Iterate input texts
         while True:
             input_question=str(input("Would you like to add more lines? (y or n only)\n"))
             if input_question=='y':
@@ -25,6 +27,4 @@ with open("mylife.txt", "w") as input_mylife:
                 print("Invalid")
                 print("___________________________________________________________________________________________________________________________")
                 continue
-# Write into the output file 'mylife.txt'
-# Iterate input texts
-# Write input to 'mylife.txt'
+
