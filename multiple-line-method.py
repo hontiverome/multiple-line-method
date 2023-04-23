@@ -9,22 +9,25 @@
 # Are there more lines y/n? n
 
 # Define the method/function
-with open("mylife.txt", "w") as input_mylife:
-    while True:
-        print("____________________________________________________________________________________________________________________________________")
-        input_line=str(input("Enter your line: "))
-        # Write input to 'mylife.txt'
-        input_mylife.write(str(input_line)+"\n")
-        # Iterate input texts
+def multiple_write():
+    with open("mylife.txt", "w") as input_mylife:
         while True:
-            input_question=str(input("Would you like to add more lines? (y or n only)\n"))
-            if input_question=='y':
-                break
-            elif input_question=='n':
-                print("Thank you for using the method.")
-                exit()
-            else: 
-                print("Invalid")
-                print("___________________________________________________________________________________________________________________________")
-                continue
+            print("____________________________________________________________________________________________________________________________________")
+            input_line=str(input("Enter your line: "))
+            # Write input to 'mylife.txt'
+            input_mylife.write(str(input_line)+"\n")
+            # Iterate input texts
+            while True:
+                input_question=str(input("Would you like to add more lines? (y or n only)\n"))
+                if input_question=='y':
+                    break
+                elif input_question=='n':
+                    print("\nThank you for using the method.")
+                    exit()
+                else: 
+                    print("Invalid")
+                    print("___________________________________________________________________________________________________________________________")
+                    continue
 
+# Execute the code
+multiple_write()
