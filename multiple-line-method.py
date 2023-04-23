@@ -9,6 +9,11 @@
 # Are there more lines y/n? n
 
 # Define the method/function
+with open("mylife.txt", "w") as input_mylife:
+    while True:
+        input_line=str(input("Enter your line: "))
+        input_mylife.write(str(input_line)+"\n")
+            
 # Write into the output file 'mylife.txt'
 # Iterate input texts
 # Write input to 'mylife.txt'
