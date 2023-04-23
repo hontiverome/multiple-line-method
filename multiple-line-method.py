@@ -35,7 +35,7 @@ def view_input():
         view_mylife=str(input("Would you like to view all of your input? (y or n):\n"))
         if view_mylife=='y':
             for line in view_file:
-                print(line.strip().rjust(25)+'\n')
+                print(line.strip().rjust(50)+'\n')
         elif view_mylife=='n':
             print("Thank You.")
             exit()
