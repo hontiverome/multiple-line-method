@@ -11,9 +11,9 @@
 # Define the method/function
 with open("mylife.txt", "w") as input_mylife:
     while True:
+        input_line=str(input("Enter your line: "))
+        input_mylife.write(str(input_line)+"\n")
         while True:
-            input_line=str(input("Enter your line: "))
-            input_mylife.write(str(input_line)+"\n")
             input_question=str(input("Would you like to add more lines? (y or n)\n"))
             if input_question=='y':
                 break
