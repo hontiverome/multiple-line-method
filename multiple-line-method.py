@@ -28,6 +28,8 @@ def multiple_write():
                     print("Invalid")
                     print("___________________________________________________________________________________________________________________________")
                     continue
-
+def view_input():
+    with open("mylife.txt", "r") as view_file:
+        
 # Execute the code
 multiple_write()
